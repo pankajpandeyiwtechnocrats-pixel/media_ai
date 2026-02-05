@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Contact from './components/Contact';
 import SaveTheDate from './components/SaveTheDate';
 import EngagementCeremony from './components/EngagementCeremony';
+import CustomizeInvite from './components/CustomizeInvite'; // Import your new page
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/save-the-date" element={<SaveTheDate />} />
             <Route path="/engagement-ceremony" element={<EngagementCeremony />} />
-            
+            <Route path="/customize/:id" element={<CustomizeInvite />} />
+      
           </Routes>
         </main>
       </div>

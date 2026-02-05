@@ -12,8 +12,8 @@ const SaveTheDate = () => {
   
   // 2. FIXED: Updated designs to reflect Save the Date theme
   const designs = [
-    { title: "Unique Save the Date Invitation", price: "249", img: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400", duration: "00:00:20" },
-    { title: "Sunflower Theme Save the Date", price: "399", oldPrice: "900", img: "https://images.unsplash.com/photo-1530103043960-ef38714abb15?w=400", duration: "00:00:45" },
+    { id: "std-001", title: "Unique Save the Date Invitation", price: "249", img: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400", duration: "00:00:20" },
+    { id: "std-002", title: "Sunflower Theme Save the Date", price: "399", oldPrice: "900", img: "https://images.unsplash.com/photo-1530103043960-ef38714abb15?w=400", duration: "00:00:45" },
     { title: "Romantic Save the Date Invitation", price: "480", oldPrice: "900", img: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400", duration: "00:00:45" },
     { title: "Premium Save the Date Invite", price: "400", img: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=400", duration: "00:00:45" },
   ];
