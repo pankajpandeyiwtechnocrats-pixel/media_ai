@@ -7,6 +7,15 @@ import weddingImg from '../assets/wedding-invites-cat2.webp';
 import bdayImg from '../assets/category-birthday1.webp';
 import bkImg from '../assets/category-babykids1.webp';
 import hwImg from '../assets/category-house-warming1.webp';
+import anImg from '../assets/Anniversary (1).webp';
+import enImg from '../assets/engagement-invite-cat.webp';
+import saImg from '../assets/save-date-invites-cat.webp';
+import biImg from '../assets/BirthDay (1).webp';
+import weImg from '../assets/wedding-invites-cat.webp';
+import chooseImg from '../assets/choose-an-invite.webp';
+import cusImg from '../assets/customize-your-invite.webp';
+import dowImg from '../assets/download-and-share.webp';
+
 
 const Features = () => {
   const [activeTab, setActiveTab] = useState('VIDEO');
@@ -246,76 +255,76 @@ const BrowseCategories = () => {
     { 
       title: "Wedding Invite", 
       desc: "Elegant video & card invites for your big day", 
-      img: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=300" 
+      img: weImg 
     },
     { 
       title: "Birthday Invite", 
       desc: "Fun and colorful invites for all ages", 
-      img: "https://images.unsplash.com/photo-1530103043960-ef38714abb15?w=300" 
+      img: biImg
     },
     { 
       title: "Save the Date", 
       desc: "Celebrate your engagement with charm.", 
-      img: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=300" 
+      img: saImg
     },
     { 
       title: "Engagement Ceremony", 
       desc: "Celebrate your engagement with charm.", 
-      img: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=300" 
+      img: enImg 
     },
     { 
       title: "Anniversary", 
       desc: "Personalized invites for your special milestone.", 
-      img: "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=300" 
+      img: anImg 
     },
     { 
-      title: "Wedding Invite", 
-      desc: "Elegant video & card invites for your big day", 
+      title: "Baby Shower", 
+      desc: "Adorable invites to welcome your little one.", 
       img: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=300" 
     },
     { 
-      title: "Birthday Invite", 
-      desc: "Fun and colorful invites for all ages", 
+      title: "Half Saree Ceremony", 
+      desc: "Graceful invites for her traditional milestone.", 
       img: "https://images.unsplash.com/photo-1530103043960-ef38714abb15?w=300" 
     },
     { 
-      title: "Save the Date", 
-      desc: "Celebrate your engagement with charm.", 
+      title: "Baptism Ceremony", 
+      desc: "Heartfelt invites for a blessed occasion.", 
       img: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=300" 
     },
     { 
-      title: "Wedding Invite", 
-      desc: "Elegant video & card invites for your big day", 
+      title: "Naming Naamkaran", 
+      desc: "Joyful invites to announce your baby’s name.", 
       img: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=300" 
     },
     { 
-      title: "Birthday Invite", 
-      desc: "Fun and colorful invites for all ages", 
+      title: "Mundan Ceremony", 
+      desc: "Traditional invites for your child’s ceremony.", 
       img: "https://images.unsplash.com/photo-1530103043960-ef38714abb15?w=300" 
     },
     { 
-      title: "Save the Date", 
-      desc: "Celebrate your engagement with charm.", 
+      title: "House Warming", 
+      desc: "Warm invites to celebrate your new home.", 
       img: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=300" 
     },
     { 
-      title: "Wedding Invite", 
-      desc: "Elegant video & card invites for your big day", 
+      title: "Pooja", 
+      desc: "Sacred invites for your spiritual gathering.", 
       img: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=300" 
     },
     { 
-      title: "Birthday Invite", 
-      desc: "Fun and colorful invites for all ages", 
+      title: "Dhoti Ceremony", 
+      desc: "Traditional invites for this special occasion.", 
       img: "https://images.unsplash.com/photo-1530103043960-ef38714abb15?w=300" 
     },
     { 
-      title: "Save the Date", 
-      desc: "Celebrate your engagement with charm.", 
+      title: "Thread Ceremony", 
+      desc: "Elegant invites for your child’s milestone.", 
       img: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=300" 
     },
     { 
-      title: "Save the Date", 
-      desc: "Celebrate your engagement with charm.", 
+      title: "Annaprashan", 
+      desc: "Sweet invites to mark your baby’s first meal.", 
       img: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=300" 
     }
   ];
@@ -337,9 +346,9 @@ const BrowseCategories = () => {
         {/* Categories Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
           {categoryList.map((item, index) => (
-            <div key={index} className="text-center group cursor-pointer">
+            <div key={index} className="text-center group cursor-pointer mt-9">
               {/* Rounded Image Card */}
-              <div className="relative aspect-square rounded-[2rem] overflow-hidden bg-pink-50/50 mb-6 border border-transparent transition-all group-hover:border-pink-200 group-hover:shadow-lg group-hover:-translate-y-2">
+              <div className="relative aspect-square rounded-[2rem] overflow-hidden bg-pink-50/50 mb-3 border border-transparent transition-all group-hover:border-pink-200 group-hover:shadow-lg group-hover:-translate-y-2">
                 <img 
                   src={item.img} 
                   alt={item.title} 
@@ -348,7 +357,7 @@ const BrowseCategories = () => {
               </div>
 
               {/* Text Info */}
-              <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-pink-600 transition-colors">
+              <h3 className="text-lg font-semibold text-gray-800 mb-1 group-hover:text-pink-600 transition-colors">
                 {item.title}
               </h3>
               <p className="text-sm text-gray-400 leading-relaxed px-2">
@@ -368,19 +377,19 @@ const HowItWorks = () => {
       number: "1",
       title: "Choose an Invite",
       desc: "Select Card or Video template from 1000+ beautiful designs",
-      img: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=400" // Replace with your 'choose' asset
+      img: chooseImg
     },
     {
       number: "2",
       title: "Customize Your Invite",
       desc: "Add your details, choose music, colors, and language preference",
-      img: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=400" // Replace with your 'customize' asset
+      img: cusImg
     },
     {
       number: "3",
       title: "Download & Share",
       desc: "Get your invite and a sharable link. Ready to wow your guests!",
-      img: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=400" // Replace with your 'share' asset
+      img: dowImg
     }
   ];
 
@@ -535,7 +544,76 @@ const PopularSearches = () => {
     "Modern Wedding Video Invitation Templates", "Save the Date Digital Video Invitation",
     "Engagement Party Video Invitation Template", "Ring Ceremony Video Invitation with Photos",
     "Mehndi Ceremony Video Invitation Designs", "Haldi Function Video Invitation with Songs",
-    "Sangeet Night Video Invitation Ideas", "Tilak Ceremony Video Invitation Cards"
+    "Sangeet Night Video Invitation Ideas", "Tilak Ceremony Video Invitation Cards", 
+        "Wedding Reception Video Invitation Template",
+        "Bridal Shower Video Invitation for Friends",
+        "Roka Ceremony Video Invitation Design",
+        "Pre Wedding Invitation Video with Couple Photos",
+        "Marathi Wedding Video Invitation Templates",
+        "Traditional Marathi Theme Wedding Invitation Video",
+        "Sakharpuda Video Invitation in Marathi",
+        "Marathi Engagement Video Invitation Online",
+        "Marathi Marriage Video Card Maker",
+        "Free Marathi Wedding Video Invitation Templates",
+        "Hindi Wedding Invitation Video with Music",
+        "Hindi Marriage Video Invitation Maker",
+        "Hindi Wedding Video Invitation Templates",
+        "Punjabi Wedding Invitation Video Download",
+        "Punjabi Wedding Video Invitation Templates Free",
+        "Rajasthani Wedding Video Invitation Maker",
+        "Marwari Theme Wedding Video Invitation",
+        "South Indian Wedding Invitation Video with Traditional Music",
+        "Jain Wedding Video Invitation Templates",
+        "Muslim Wedding Video Invitation Templates",
+        "Christian Wedding Video Invitation Templates",
+        "Bengali Wedding Video Invitation Templates",
+        "Housewarming Video Invitation Card Online",
+        "Grah Pravesh Video Invitation in Hindi",
+        "New Home Digital Invitation Video",
+        "Baby Shower Video Invitation with Cute Animations",
+        "Godh Bharai Ceremony Video Invitation Templates",
+        "Birthday Video Invitation Maker Online Free",
+        "Birthday Greeting Video with Name and Photo",
+        "Superhero Theme Birthday Video Invitation",
+        "Anniversary Video Invitation Template Online",
+        "Happy Anniversary Video Card with Music",
+        "Devotional Function Video Invitation Templates",
+        "Thank You Video Greeting for Friends & Family",
+        "Congratulations Video Greeting Templates",
+        "Birthday Wishes Video Greeting for Whatsapp",
+        "Free Greeting Video Templates Online",
+        "Create Personalized Greeting Videos Online",
+        "Wedding Video Invitation Maker Tool",
+        "Custom Wedding Invitation Video Online",
+        "Premium Wedding Video Invitation Designs",
+        "Online Video Invitation Maker Free",
+        "Free Video Invitation Templates for All Occasions",
+        "Buy Premium Invitation Video Online",
+        "Digital Invitation Card Maker Online",
+        "Video Greeting Maker Online Free",
+        "Marathi Wedding Invitation Video with Traditional Them",
+        "Haldi Ceremony Video Invitation with Bollywood Songs",
+        "Punjabi Wedding Invitation Video Download Free",
+        "Free Engagement Video Invitation Template in Hindi",
+        "Housewarming Invitation Video in Marathi Language",
+        "Digital Save the Date Video Invitation for Wedding",
+        "Baby Shower Video Invitation Maker Online Free",
+        "Superhero Theme Birthday Invitation Video for Kids",
+        "Buy Premium Wedding Invitation Video Online",
+        "Diwali Video Invitation Card Online",
+        "Half Saree Ceremony Video Invitation Templates",
+        "Baptism Video Invitation Templates for Church Ceremony",
+        "Naamkaran Ceremony Digital Invitation Video",
+        "Mundan Ceremony Video Invitation Designs",
+        "Christmas Party Video Invitation Maker",
+        "Pooja Ceremony Video Invitation Templates",
+        "Dhoti Ceremony Video Invitation Templates",
+        "Thread Ceremony Digital Video Invitation",
+        "Muslim Wedding Video Invitation Maker",
+        "Annaprashan Ceremony Video Invitation Templates",
+        "Kitty Party Digital Video Invitation",
+        "Grand Opening Video Invitation for Business",
+        "Adult Milestone Celebration Video Invitation"
   ];
 
   return (

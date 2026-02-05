@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Search, ChevronDown, User, MessageCircle, Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,21 +46,28 @@ const Navbar = () => {
           
           {/* Wedding Dropdown Trigger */}
           <div className="relative group py-4">
-            <a href="#" className="flex items-center gap-1 hover:text-pink-600 transition cursor-pointer">
+            <button className="flex items-center gap-1 hover:text-pink-600 transition cursor-pointer">
               Wedding <ChevronDown size={14} className="group-hover:rotate-180 transition-transform" />
-            </a>
+            </button>
 
             {/* The Actual Dropdown Menu */}
             <div className="absolute top-full left-0 w-56 bg-white shadow-2xl rounded-lg border border-gray-100 py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[100]">
-              {weddingLinks.map((link, index) => (
-                <a 
+              {weddingLinks.map((link, index) => {
+
+                let destination = '#';
+                if (link === "Save the Date") destination = "/save-the-date";
+                if (link === "Engagement Ceremony") destination = "/engagement-ceremony";
+
+                return (
+                <Link 
                   key={index} 
-                  href="#" 
+                  to={destination}
                   className="block px-6 py-2.5 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 font-medium transition"
                 >
                   {link}
-                </a>
-              ))}
+                </Link>
+                );
+})}
             </div>
           </div>
 
